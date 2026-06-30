@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Rizky Novrizal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <header class="header">
@@ -25,16 +28,17 @@
             <div class="col-left">
                 <h2 class="section-title">SEDIKIT TENTANG SAYA</h2>
                 <p class="about-text">
-                    Saya adalah Mahasiswa Teknik Informatika Universitas Lampung 2024. 
-                    Saat ini saya sedang aktif berorganisasi di Himatro dan UKM Gradien. 
-                    Saya memiliki ketertarikan di bidang cyber security, khususnya jaringan. 
+                    Saya adalah Mahasiswa Teknik Informatika Universitas Lampung 2024.
+                    Saat ini saya sedang aktif berorganisasi di Himatro dan UKM Gradien.
+                    Saya memiliki ketertarikan di bidang cyber security, khususnya jaringan.
                     Saya terus belajar hal-hal baru untuk meningkatkan kemampuan saya dalam pengamanan cyber.
                 </p>
             </div>
             <div class="col-right text-right">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Foto Kerja 1" class="img-large">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Foto Kerja 1"
+                    class="img-large">
             </div>
-        <div class="flex-container offset-row">
+            <div class="flex-container offset-row">
     </section>
 
     <hr class="divider">
@@ -59,7 +63,8 @@
                 </div>
             </div>
             <div class="col-right text-right">
-                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400" alt="Foto Organisasi" class="img-medium">
+                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400" alt="Foto Organisasi"
+                    class="img-medium">
             </div>
         </div>
     </section>
@@ -71,7 +76,8 @@
         <div class="flex-container">
             <div class="col-left">
                 <h2 class="section-title">KEAHLIAN & KEMAHIRAN</h2>
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500" alt="Foto Keahlian" class="img-keahlian">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500" alt="Foto Keahlian"
+                    class="img-keahlian">
             </div>
             <div class="col-right skill-list-container">
                 <div class="skill-category">
@@ -94,6 +100,33 @@
 
     <section class="section">
         <span class="section-number">04</span>
+        <h2 class="section-title">PORTOFOLIO PROYEK</h2>
+        <div class="filter-container">
+            <button data-category="all" class="filter-btn active">Semua</button>
+            <button data-category="networking" class="filter-btn">Networking</button>
+            <button data-category="multimedia" class="filter-btn">Multimedia</button>
+            <button data-category="os" class="filter-btn">OS</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-item" data-item="networking">
+                <h3>Securing LAN Network</h3>
+                <p>Konfigurasi router mikrotik, firewall rule, dan network segmentation untuk keamanan sistem.</p>
+            </div>
+            <div class="project-item" data-item="multimedia">
+                <h3>Video Profile Editing</h3>
+                <p>Proses editing dan penyuntingan video profil menggunakan DaVinci Resolve dan GIMP.</p>
+            </div>
+            <div class="project-item" data-item="os">
+                <h3>Custom Arch Linux Setup</h3>
+                <p>Kustomisasi interface window manager dan setup optimalisasi pada Arch Linux.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section">
+        <span class="section-number">05</span>
         <div class="flex-container">
             <div class="col-left">
                 <p class="author-label">Rizky Novrizal</p>
@@ -104,6 +137,15 @@
                     <p class="contact-phone">081390948388</p>
                     <p class="contact-email">tube.rizky711@gmail.com</p>
                 </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="inputMessage">Pesan Kolaborasi</label>
+                        <textarea id="inputMessage" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        <div id="error-message" class="error-msg" style="display: none;">Pesan tidak boleh kosong!</div>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Pesan</button>
+                </form>
             </div>
             <div class="col-right text-right">
                 <img src="63869172983.jpg" class="img-collab">
@@ -112,4 +154,5 @@
     </section>
 
 </body>
+
 </html>
